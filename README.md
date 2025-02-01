@@ -23,8 +23,8 @@ A Django-based FAQ management system with multilingual support, WYSIWYG editor, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/faq-system.git
-cd faq-system
+git clone https://github.com/Aryandev12/backend_hiring_assesment.git
+cd faq
 ```
 
 2. Create and activate virtual environment:
@@ -88,6 +88,9 @@ docker-compose exec web python manage.py createsuperuser
 - Retrieve FAQ: `GET /api/faqs/{id}/`
 - Update FAQ: `PUT /api/faqs/{id}/`
 - Delete FAQ: `DELETE /api/faqs/{id}/`
+
+## Output
+![Alt text](images/Screenshot from 2025-02-02 00-27-35.png)
 
 ### Language Selection
 
