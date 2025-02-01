@@ -91,6 +91,8 @@ docker-compose exec web python manage.py createsuperuser
 
 ## Output
 ![ALT text](images/image1.png)
+![ALT text](images/image2.png)
+![ALT text](images/image3.png)
 
 ### Language Selection
 
