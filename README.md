@@ -90,7 +90,7 @@ docker-compose exec web python manage.py createsuperuser
 - Delete FAQ: `DELETE /api/faqs/{id}/`
 
 ## Output
-![Alt text](images/Screenshot from 2025-02-02 00-27-35.png)
+![Alt text](images/image1)
 
 ### Language Selection
 
