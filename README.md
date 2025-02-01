@@ -89,6 +89,9 @@ docker-compose exec web python manage.py createsuperuser
 - Update FAQ: `PUT /api/faqs/{id}/`
 - Delete FAQ: `DELETE /api/faqs/{id}/`
 
+## Output
+![Alt text](images/Screenshot from 2025-02-02 00-27-35.png)
+
 ### Language Selection
 
 Add `lang` parameter to select language:
