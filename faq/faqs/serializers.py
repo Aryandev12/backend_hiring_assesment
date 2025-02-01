@@ -10,7 +10,6 @@ class FAQSerializer(serializers.ModelSerializer):
     class Meta:
         model = FAQ
         fields = ['id', 'question', 'answer', 'created_at', 'updated_at', 'question_en', 'answer_en']
-
     def get_question(self, obj):
         lang = self.context.get('lang', 'en')
         return obj.get_translated_field('question', lang)

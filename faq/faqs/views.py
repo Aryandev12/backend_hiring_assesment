@@ -4,6 +4,8 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from .models import FAQ
 from .serializers import FAQSerializer
+from rest_framework.decorators import action
+
 
 class FAQViewSet(viewsets.ModelViewSet):
     queryset = FAQ.objects.all()
@@ -20,3 +22,8 @@ class FAQViewSet(viewsets.ModelViewSet):
         context = super().get_serializer_context()
         context['lang'] = self.request.query_params.get('lang', 'en')
         return context
+    @action(detail=True, methods=['delete'])
+    def remove(self, request, pk=None):
+        faq = self.get_object()
+        faq.delete()
+        return Response({"message": "Deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
